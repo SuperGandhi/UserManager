@@ -19,13 +19,15 @@ function App() {
   }
 
   return (
+    
+  <div style={{marginTop: '15px'}}>
     <Container>
     <Card>
       <div style={{padding: 20}}>
         <form onSubmit={submit}>
-          <Input label="Nombre: " name="name" value={formulario.name} onChange={handleChange}/>
-          <Input label="Apellido: " name="lastname" value={formulario.lastname} onChange={handleChange}/>
-          <Input label="Correo: " name="mail" value={formulario.mail} onChange={handleChange}/>
+          <Input label="Nombre: " name="name" value={formulario.name} onChange={handleChange} placeholder='Nombre' />
+          <Input label="Apellido: " name="lastname" value={formulario.lastname} onChange={handleChange} placeholder='Apellido'/>
+          <Input label="Correo: " name="mail" value={formulario.mail} onChange={handleChange} placeholder='Correo'/>
           <Button>Send</Button>
         </form>        
       </div>
@@ -37,6 +39,7 @@ function App() {
       </ul>
     </Card>
     </Container>
+  </div>
   );
 }
 
